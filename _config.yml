@@ -1,15 +1,15 @@
 title: uhaiin.com
-description: "Satellite - jekyll blog theme"
+description: "博客，编程，java，学习，分享，笔记"
 logo_img: "/assets/img/favicon.webp"
 profile_img: "/assets/img/profile.jpg"
 
 # Social Links
 email: pixel.zhong@gmail.com
 github_username: uhaiin
-twitter_username: twitter
-instagram_username: instagram
-linkedin_username: linkedin
-facebook_username: facebook
+#twitter_username: twitter
+#instagram_username: instagram
+#linkedin_username: linkedin
+#facebook_username: facebook
 
 # External API
 giscus_repo: "byanko55/jekyll-theme-satellite"
