@@ -1,6 +1,12 @@
 ---
-title: "Example Post"
-date: "2023-12-01"
+title: "Markdown from A to Z"
+tags:
+    - user manual
+    - markdown
+    - writing format
+date: "2023-09-05"
+thumbnail: "https://i.ibb.co/MRzw6T9/sample.webp"
+bookmark: true
 ---
 
 # Welcome
