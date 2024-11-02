@@ -38,8 +38,8 @@
     <ul class="nav-list">
     {%- for node in first_level_pages -%}
         {%- assign node_url = node.url | remove: 'index.html' -%}
-        {%- assign node_title = node.path | remove: 'index.md' | split: "/" | last | remove: '.md' | replace: "_pages", "uhaiin" -%}
-        {%- assign children_list = second_level_pages 
+        {%- assign node_title = "uhaiin", node.path | remove: 'index.md' | split: "/" | last | remove: '.md' | replace: "_pages" -%}
+        {%- assign children_list = second_level_pages
             | where_exp: "item", "item.url contains node_url" -%}
         {%- assign num_children = children_list | size -%}
         <li id="nav-first" aria-label="{{ node_title }}">
@@ -59,7 +59,7 @@
             {%- for child in children_list -%}
                 {%- assign child_url = child.url | remove: 'index.html' -%}
                 {%- assign child_title = child.path | remove: 'index.md' | split: "/" | last | remove: '.md' -%}
-                {%- assign grand_children_list = third_level_pages 
+                {%- assign grand_children_list = third_level_pages
                     | where_exp: "item", "item.url contains child_url" -%}
                 {%- assign num_grand_children = grand_children_list | size -%}
                 <li id="nav-second" aria-label="{{ child_title }}">
