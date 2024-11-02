@@ -6,10 +6,6 @@ profile_img: "/assets/img/profile.jpg"
 # Social Links
 email: pixel.zhong@gmail.com
 github_username: uhaiin
-#twitter_username: twitter
-#instagram_username: instagram
-#linkedin_username: linkedin
-#facebook_username: facebook
 
 # External API
 giscus_repo: "byanko55/jekyll-theme-satellite"
@@ -21,7 +17,7 @@ google_analytics:
 
 # If your repo name follows the format "<user-name>.github.io", then leave the below blank.
 # Otherwise, set its value as "/<repo-name>". ex) baseurl: /myblog
-baseurl:
+baseurl: /uhaiin
 
 # Build settings
 plugins:
