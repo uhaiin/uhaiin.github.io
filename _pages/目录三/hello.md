@@ -7,18 +7,6 @@ thumbnail: "https://i.ibb.co/V9j2Qsg/giscus-Wl0-X3byd-az-U68-1.webp"
 bookmark: true
 ---
 
-[![CI](https://img.shields.io/badge/Github%20Pages-passing-gold.svg?logo=github)](ci)
-[![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
-[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%204.3.2-green.svg)](https://jekyllrb.com/)
-[![Jekyll](https://img.shields.io/badge/gem%20version-3.2.33-blue.svg)](gem)
-<a href="https://jekyll-themes.com/byanko55/jekyll-theme-satellite">
-<img
-src="https://img.shields.io/badge/featured%20on-JT-red.svg"
-height="20"
-alt="Jekyll Themes Shield"
-/>
-</a>
-
 # Satellite🛰️ - Jekyll blog theme
 An emotional and adorable blog theme powered by ***Jekyll***.
 
@@ -111,38 +99,3 @@ linkedin_username: linkedin
 facebook_username: facebook
 ```
 
-
-### Run site locally
-
-From the site root directory, install the dependencies:
-
-```
-bundle install
-```
-
-
-Start a Jekyll service.
-
-```
-bundle exec jekyll serve
-```
-
-Now open [http://localhost:4000](http://localhost:4000) in your browser.
-<br></br>
-
-## Customizing
-
-You can find useful manuals for customizing your site from the below table:
-
-|||
-|---|---|
-|Posting guidelines|[link](https://github.com/byanko55/jekyll-theme-satellite/blob/master/docs/Posting%20Guide.md)|
-|Enabling ***comment system***|[link](https://github.com/byanko55/jekyll-theme-satellite/blob/master/docs/Comment%20System.md)|
-|Enabling ***Visitor counter***|[link](https://github.com/byanko55/jekyll-theme-satellite/blob/master/docs/Visitor%20Counter.md)|
-
-## Contribution
-If you would like to report a bug or request a new feature, please open [an issue](https://github.com/byanko55/jekyll-theme-satellite/issues) We are open to any kind of feedback or collaboration.
-<br></br>
-
-## License
-© 2024 *Yankos*. This theme is available as open source under the terms of the [MIT License](https://opensource.org/license/mit/).
