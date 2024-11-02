@@ -204,7 +204,7 @@ function searchPost(pages){
         for (var i = 0; i < pages.length; i++) {
             var post = pages[i];
     
-            if (post.title === 'Home' && post.type == 'category') continue;
+            if (post.title === 'uhaiin' && post.type == 'category') continue;
     
             if (post.title.toLowerCase().indexOf(keyword) >= 0
             || post.path.toLowerCase().indexOf(keyword) >= 0
@@ -229,7 +229,7 @@ function searchPost(pages){
             var highlighted_path = highlightKeyword(matchedPosts[i].path, keyword);
     
             if (highlighted_path === '')
-                highlighted_path = "Home";
+                highlighted_path = "uhaiin";
     
             if (matchedPosts[i].type === 'post'){
                 var highlighted_title = highlightKeyword(matchedPosts[i].title, keyword);
