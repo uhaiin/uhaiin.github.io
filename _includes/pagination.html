@@ -24,10 +24,9 @@
                     {% if check_localasset[0] == '' %}
                     {%- assign thumbnail_url = thumbnail_url | prepend: site.baseurl -%}
                     {% endif %}
-                    {{thumbnail_url}}
                     <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ thumbnail_url }}') !important"></a>
                     {% else %}
-                    <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumbnail/default.jpg' | prepend: site.baseurl }}') !important"></a>
+                    <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumbnail/empty.jpg' | prepend: site.baseurl }}') !important"></a>
                     {% endif %}
                 </div>
                 <div class="box_contents">
@@ -43,7 +42,7 @@
                         <span class="category">None</span>
                         {% endif %}
                         {%- assign posting_date = sub_page.date | date: "%Y-%m-%d" -%}
-                        {% if posting_date != "2024-01-01" %}
+                        {% if posting_date != "1900-01-01" %}
                         <span class="date">· {{ sub_page.date | date: "%Y-%m-%d" }}</span>
                         {% endif %}
                     </div>
