@@ -40,15 +40,19 @@ bookmark: true
 
 <table>
   <tr>
-    <td class="column1">右对齐文字</td>
-    <td class="column2">左对齐文字</td>
+    <td class="column1">网站</td>
+    <td class="column2">网址</td>
   </tr>
   <tr>
-    <td class="column1">右对齐文字</td>
-    <td class="column2">左对齐文字</td>
+    <td class="column1">GitHub</td>
+    <td class="column2">https://github.com/uhaiin/</td>
   </tr>
   <tr>
-    <td class="column1">右对齐文字</td>
-    <td class="column2">左对齐文字</td>
+    <td class="column1">uhaiin</td>
+    <td class="column2">https://uhaiin.com/</td>
+  </tr>
+  <tr>
+    <td class="column1">goatcounter</td>
+    <td class="column2">https://uhaiin.goatcounter.com/</td>
   </tr>
 </table>
