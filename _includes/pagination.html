@@ -22,9 +22,7 @@
                             return Math.floor(Math.random() * (max - min + 1)) + min;
                         }
 
-                        // 生成一个随机数并存储在变量中
                         const randomImageNumber = getRandomInt(1, 10);
-                        // 将随机数赋值给一个data属性，以便Liquid可以读取
                         document.documentElement.setAttribute('data-random-image', randomImageNumber);
                     </script>
                     <div class="thumbnail_zone">
@@ -37,7 +35,6 @@
                             {{thumbnail_url}}
                             <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ thumbnail_url }}') !important"></a>
                         {% else %}
-                            <!-- 读取JavaScript设置的data属性 -->
                             {% assign randomImageNumber = '' %}
                             {% capture randomImageNumber %}
                             <script>document.write(document.documentElement.getAttribute('data-random-image'))</script>
@@ -58,7 +55,7 @@
                                 <span class="category">None</span>
                             {% endif %}
                             {%- assign posting_date = sub_page.date | date: "%Y-%m-%d" -%}
-                            {% if posting_date != "1900-01-01" %}
+                            {% if posting_date != "2024-01-01" %}
                                 <span class="date">· {{ sub_page.date | date: "%Y-%m-%d" }}</span>
                             {% endif %}
                         </div>
