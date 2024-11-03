@@ -24,7 +24,6 @@
                     {% if check_localasset[0] == '' %}
                     {%- assign thumbnail_url = thumbnail_url | prepend: site.baseurl -%}
                     {% endif %}
-                    {{thumbnail_url}}
                     <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ thumbnail_url }}') !important"></a>
                     {% else %}
                     <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumbnail/default.jpg' | prepend: site.baseurl }}') !important"></a>
