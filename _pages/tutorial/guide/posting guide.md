@@ -3,7 +3,7 @@ title: "安装部署指南"
 tags:
     - guide
 date: "2024-01-01"
-thumbnail: "/assets/img/thumbnail/sample.png"
+thumbnail: "/assets/img/thumbnail/1.png"
 bookmark: true
 ---
 
