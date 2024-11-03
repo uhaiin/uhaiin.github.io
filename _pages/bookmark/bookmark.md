@@ -14,7 +14,7 @@ bookmark: true
   }
   .column1 {
     width: 25%;
-    text-align: right;
+    text-align: center;
   }
   .column2 {
     width: 75%;
@@ -46,14 +46,14 @@ bookmark: true
   </tr>
   <tr>
     <td class="column1">GitHub</td>
-    <td class="column2">https://github.com/uhaiin/</td>
+    <td class="column2"><a href="https://github.com/uhaiin/" target="_blank">https://github.com/uhaiin/</a></td>
   </tr>
   <tr>
     <td class="column1">uhaiin</td>
-    <td class="column2">https://uhaiin.com/</td>
+    <td class="column2"><a href="https://uhaiin.com/" target="_blank">https://uhaiin.com/</a></td>
   </tr>
   <tr>
     <td class="column1">goatcounter</td>
-    <td class="column2">https://uhaiin.goatcounter.com/</td>
+    <td class="column2"><a href="https://uhaiin.goatcounter.com/" target="_blank">https://uhaiin.goatcounter.com/</a></td>
   </tr>
 </table>
