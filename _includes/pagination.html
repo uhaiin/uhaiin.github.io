@@ -42,7 +42,6 @@
                             {% capture randomImageNumber %}
                             <script>document.write(document.documentElement.getAttribute('data-random-image'))</script>
                             {% endcapture %}
-                        randomImageNumber:{{ randomImageNumber }}
                             <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumbnail/{{ randomImageNumber }}.jpg' | prepend: site.baseurl }}') !important"></a>
                         {% endif %}
                     </div>
