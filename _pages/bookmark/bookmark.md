@@ -18,9 +18,10 @@ bookmark: true
   }
   .column2 {
     width: 75%;
-    text-align: left;
+    text-align: center;
   }
 </style>
+
 
 ## uhaiin
 ---
@@ -40,8 +41,8 @@ bookmark: true
 
 <table>
   <tr>
-    <td class="column1">网站</td>
-    <td class="column2">网址</td>
+    <th class="column1">网站</th>
+    <th class="column2">网址</th>
   </tr>
   <tr>
     <td class="column1">GitHub</td>
