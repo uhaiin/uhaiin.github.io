@@ -28,12 +28,14 @@
                         {% else %}
                             <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" id="random-thumbnail-{{ forloop.index }}" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumbnail/empty.jpg' | prepend: site.baseurl }}') !important"></a>
                             <script>
-                                const numberOfImages = 40;
-                                const randomImageIndex = Math.floor(Math.random() * numberOfImages) + 1;
-                                const randomImagePath = '/assets/img/thumbnail/' + randomImageIndex + '.jpg';
-                                console.log("randomImagePath ==> ", randomImagePath);
-                                const elementId = 'random-thumbnail-' + {{ forloop.index }};
-                                document.getElementById(elementId).style.backgroundImage = 'url(' + randomImagePath + ')';
+                                (function() {
+                                    const numberOfImages = 40;
+                                    const randomImageIndex = Math.floor(Math.random() * numberOfImages) + 1;
+                                    const randomImagePath = '/assets/img/thumbnail/' + randomImageIndex + '.jpg';
+                                    console.log("randomImagePath ==> ", randomImagePath);
+                                    const elementId = 'random-thumbnail-' + {{ forloop.index }};
+                                    document.getElementById(elementId).style.backgroundImage = 'url(' + randomImagePath + ')';
+                                })();
                             </script>
                         {% endif %}
                     </div>
