@@ -27,12 +27,6 @@
                             <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ thumbnail_url }}') !important"></a>
                         {% else %}
                             <a href="{{ sub_page.url | prepend: site.baseurl }}" id="random-thumbnail" class="thumbnail_post empty" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumbnail/default.jpg' | prepend: site.baseurl }}') !important"></a>
-                            <script>
-                                const numberOfImages = 40;
-                                const randomImageIndex = Math.floor(Math.random() * numberOfImages) + 1;
-                                const randomImagePath = '/assets/img/thumbnail/' + randomImageIndex + '.jpg';
-                                document.getElementById('random-thumbnail').style.backgroundImage = 'url(' + randomImagePath + ')';
-                            </script>
                         {% endif %}
                     </div>
                     <div class="box_contents">
