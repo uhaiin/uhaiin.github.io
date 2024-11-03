@@ -1,5 +1,5 @@
 ---
-title: "Markdown from A to Z"
+title: "Markdown Guide"
 tags:
     - user manual
     - markdown
