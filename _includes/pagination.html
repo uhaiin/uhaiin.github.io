@@ -17,6 +17,16 @@
             {%- assign post_counts = post_counts | plus:1 -%}
             <li class="paginated-item">
                 <div id="article_content">
+                    <script>
+                        function getRandomInt(min, max) {
+                            return Math.floor(Math.random() * (max - min + 1)) + min;
+                        }
+
+                        // 生成一个随机数并存储在变量中
+                        const randomImageNumber = getRandomInt(1, 10);
+                        // 将随机数赋值给一个data属性，以便Liquid可以读取
+                        document.documentElement.setAttribute('data-random-image', randomImageNumber);
+                    </script>
                     <div class="thumbnail_zone">
                         {% if sub_page.thumbnail != nil %}
                             {%- assign thumbnail_url = sub_page.thumbnail -%}
@@ -27,7 +37,12 @@
                             {{thumbnail_url}}
                             <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ thumbnail_url }}') !important"></a>
                         {% else %}
-                            <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumbnail/default.jpg' | prepend: site.baseurl }}') !important"></a>
+                            <!-- 读取JavaScript设置的data属性 -->
+                            {% assign randomImageNumber = '' %}
+                            {% capture randomImageNumber %}
+                            <script>document.write(document.documentElement.getAttribute('data-random-image'))</script>
+                            {% endcapture %}
+                            <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumbnail/{{ randomImageNumber }}.jpg' | prepend: site.baseurl }}') !important"></a>
                         {% endif %}
                     </div>
                     <div class="box_contents">
