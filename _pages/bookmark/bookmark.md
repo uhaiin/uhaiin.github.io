@@ -4,26 +4,51 @@ date: "2024-01-01"
 bookmark: true
 ---
 
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+  }
+  .column1 {
+    width: 25%;
+    text-align: right;
+  }
+  .column2 {
+    width: 75%;
+    text-align: left;
+  }
+</style>
+
 ## uhaiin
 ---
 
-[github](https://github.com/uhaiin/)
-[uhaiin](https://uhaiin.com/)
-[uhaiin-goatcounter](https://uhaiin.goatcounter.com/)
+- <a href="https://github.com/uhaiin/" target="_blank">uhaiin GitHub</a>
+- <a href="https://github.com/uhaiin/" target="_blank">uhaiin https://uhaiin.com/</a>
+- <a href="https://github.com/uhaiin/" target="_blank">goatcounter https://uhaiin.goatcounter.com/</a>
 
 
 ## sunyard
 ---
 
-[企业邮箱](http://mail.sunyard.com/)
+- <a href="https://github.com/uhaiin/" target="_blank">企业邮箱 https://github.com/uhaiin/</a>
 
-
-## uahiin
-
+## table
 ---
 
-|网站|网址|备注|
-|---|---|---|
-|Github|<a href="https://github.com/uhaiin/" target="_blank">uhaiin GitHub</a>|代码仓库|
-|博客|<h2>Header 2</h2>|<span class="sh2">Header 2</span>|
-|Goatcounter|<h3>Header 3</h3>|<span class="sh3">Header 3</span>|
+<table>
+  <tr>
+    <td class="column1">右对齐文字</td>
+    <td class="column2">左对齐文字</td>
+  </tr>
+  <tr>
+    <td class="column1">右对齐文字</td>
+    <td class="column2">左对齐文字</td>
+  </tr>
+  <tr>
+    <td class="column1">右对齐文字</td>
+    <td class="column2">左对齐文字</td>
+  </tr>
+</table>
