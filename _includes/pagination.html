@@ -26,7 +26,7 @@
                             {% endif %}
                             <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ thumbnail_url }}') !important"></a>
                         {% else %}
-                            <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" id="random-thumbnail-{{ forloop.index }}" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumbnail/empty.jpg' | prepend: site.baseurl }}') !important"></a>
+                            <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post" id="random-thumbnail-{{ forloop.index }}" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumbnail/empty.jpg' | prepend: site.baseurl }}') !important"></a>
                             <script>
                                 (function() {
                                     const numberOfImages = 40;
