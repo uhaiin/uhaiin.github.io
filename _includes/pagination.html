@@ -32,7 +32,6 @@
                                     const numberOfImages = 40;
                                     const randomImageIndex = Math.floor(Math.random() * numberOfImages) + 1;
                                     const randomImagePath = '/assets/img/thumbnail/' + randomImageIndex + '.jpg';
-                                    console.log("randomImagePath ==> ", randomImagePath);
                                     const elementId = 'random-thumbnail-' + {{ forloop.index }};
                                     document.getElementById(elementId).style.backgroundImage = 'url(' + randomImagePath + ')';
                                 })();
