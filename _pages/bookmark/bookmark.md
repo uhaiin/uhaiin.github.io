@@ -6,7 +6,7 @@ bookmark: true
 
 <style>
   table {
-    width: 100%;
+    width: 784px;
     border-collapse: collapse;
   }
   th, td {
