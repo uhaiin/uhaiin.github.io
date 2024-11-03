@@ -1,5 +1,5 @@
 ---
-title: "Publishing your blog post"
+title: "安装部署指南"
 tags:
     - guide
 date: "2024-01-01"
@@ -7,12 +7,12 @@ thumbnail: "/assets/img/thumbnail/sample.png"
 bookmark: true
 ---
 
-这篇文章讲如何安装配置并发表博客文章。博客基于**Github Page**，如何搭建再次不过多赘述，着重讲一下配置文件以及文章的发布。
+这篇文章讲如何安装配置并发表博客文章。博客基于`Github Page`，如何搭建再次不过多赘述，着重讲一下配置文件以及文章的发布。
 
 ## 配置
 ---
 
-只需要修改**_config.yml**下的配置为你自己的实际配置即可
+只需要修改`_config.yml*`下的配置为你自己的实际配置即可
 
 ## 目录
 ---
