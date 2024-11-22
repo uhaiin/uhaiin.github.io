@@ -4,8 +4,8 @@ plugins:
   - jekyll-regex-replace
 
 # SEO相关信息
-title: TMaize Blog
-description: TMaize的个人博客
+title: uhaiin blog
+description: uhaiin blog
 keywords: uhaiin,Blog,Java,Html,JavaScript
 author: uhaiin
 footerText: 'Copyright © 2024 uhaiin'
