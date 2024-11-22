@@ -3,20 +3,17 @@ layout: mypost
 title: about
 ---
 
-> Hello 陌生人，欢迎访问 TMaize Blog
+>Hello stranger, welcome to TMaize Blog
 
-该博客托管于 GitHub Page，国内解析到腾讯云对象存储，以保证国内外的访问速度，留言页面使用腾讯的“吐个槽”
+This blog is hosted on GitHub Page and parsed to Tencent Cloud object storage in China to ensure access speed both domestically and internationally. The comment page uses Tencent's "spit out a groove" feature
+The theme was written by myself, see [tmaize blog]（ https://github.com/TMaize/tmaize-blog ）If you like it, you can give a little star. Also, welcome to add friend links. Just leave a message on the [message board] (chat. html)
 
-主题是自己写的，见[tmaize-blog](https://github.com/TMaize/tmaize-blog)，喜欢的话可以给个小星星。另外欢迎添加友链，在[留言板](chat.html)留言即可
+## Related skills
 
-## 相关技能
+Full stack development, my first job mainly used Java (I almost forgot now), and I used Golang for a while. Currently, I am working on front-end JavaScript and Node.js, mainly using Vue technology stack. Familiar with database, Docker, and operation and maintenance related technologies
+If there is an opportunity for remote work, please feel free to contact me 😄
 
-全栈开发，第一份工作主要使用 Java（现在快忘了），使用过一段时间 Golang，目前在做前端 JavaScript、Node.js，主要是 Vue 技术栈。熟悉数据库，Docker，运维相关技术
+## Contact me
 
-如有远程工作的机会欢迎联系我 😄
-
-## 联系我
-
-- Email&nbsp;: [1772314831@qq.com](mailto:1772314831@qq.com)
-
-- GitHub: [https://github.com/tmaize](https://github.com/tmaize)
+- Email&nbsp;:  [ 1772314831@qq.com ](mailto: 1772314831@qq.com )
+- GitHub: [ https://github.com/tmaize ]( https://github.com/tmaize )
