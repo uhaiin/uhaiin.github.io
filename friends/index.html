@@ -1,0 +1,48 @@
+<hr>
+<h2 id="robots-noindex-nofollowsitemap-falsemenu-id-socialheader-falsesidebar-sociallist-welcome-recent-title-友链h1-‘’breadcrumb-falselogo-subtitle-快来交换友链吧～comment-title-快来交换友链吧～giscus-data-mapping-number-data-term-22"><a href="#robots-noindex-nofollowsitemap-falsemenu-id-socialheader-falsesidebar-sociallist-welcome-recent-title-友链h1-‘’breadcrumb-falselogo-subtitle-快来交换友链吧～comment-title-快来交换友链吧～giscus-data-mapping-number-data-term-22" class="headerlink" title="robots: noindex,nofollowsitemap: falsemenu_id: socialheader: falsesidebar: [sociallist, welcome, recent]title: 友链h1: ‘’breadcrumb: falselogo:  subtitle: 快来交换友链吧～comment_title: 快来交换友链吧～giscus:  data-mapping: number  data-term: 22"></a>robots: noindex,nofollow<br>sitemap: false<br>menu_id: social<br>header: false<br>sidebar: [sociallist, welcome, recent]<br>title: 友链<br>h1: ‘’<br>breadcrumb: false<br>logo:<br>  subtitle: 快来交换友链吧～<br>comment_title: 快来交换友链吧～<br>giscus:<br>  data-mapping: number<br>  data-term: 22</h2><p>{% banner 小伙伴们 如果宇宙中真有什么终极的逻辑，那就是我们终有一天会在舰桥上重逢，直到生命终结。 bg:&#x2F;assets&#x2F;banner&#x2F;friends.jpg %}<br>{% navbar active:&#x2F;friends&#x2F; <a href="/friends/">友链</a> <a href="/about/">关于</a> %}<br>{% endbanner %}</p>
+<p>{% friends api:<a href="https://raw.github.xaox.cc/xaoxuu/friends/output/v2/data.json">https://raw.github.xaox.cc/xaoxuu/friends/output/v2/data.json</a> %}</p>
+<p>{% box [2023-12] 友链失联了怎么办? %}<br>添加友链后如果网站长期无法访问，可能会被取消友链！如果您的网站恢复了，可以在申请友链时创建的那条 <a href="https://github.com/xaoxuu/friends/issues">issue</a> 中评论告知。<br>{% endbox %}</p>
+<p>{% quot icon:hashtag 朋友们近期的文章 %}</p>
+<p>{% timeline type:fcircle limit:10 api:<a href="https://raw.github.xaox.cc/xaoxuu/friends-rss-generator/output/data.json">https://raw.github.xaox.cc/xaoxuu/friends-rss-generator/output/data.json</a> %}<br>{% endtimeline %}</p>
+<p>{% quot icon:hashtag 如何交换友链？ %}</p>
+<ol>
+<li>您的网站应满足以下全部条件：</li>
+</ol>
+<ul>
+<li><strong>安全合规</strong>：合法的、非营利性、无木马植入的 HTTPS 站点。</li>
+<li><strong>非空壳网站</strong>：网站内发布至少 {% mark 五篇 %} 原创文章，内容题材不限。</li>
+</ul>
+<ol start="2">
+<li>我们需要有一定的有效互动：</li>
+</ol>
+<ul>
+<li><strong>先友后链</strong>：与博主有至少 {% mark 半年 %} 的有效互动，例如 issue 或者评论留言。</li>
+</ul>
+<p>{% box [2023-12] 友链申请条件变更说明 %}</p>
+<ol>
+<li>降低了对商业广告的要求，可以有但是不能太多。</li>
+<li>提高了「有效互动」的定义：5次更改为半年。<br>{% endbox %}</li>
+</ol>
+<p>{% folding 我已满足全部条件，快告诉我如何交换友链！<img no-lazy style="display:inline;height:1em" src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatattentionreverse.png"> %}</p>
+<p>{% note color:warning 如果您没有满足上述条件，即时提交了申请也不会通过哦～ %}</p>
+<p>{% timeline %}</p>
+<!-- node 第一步：新建 Issue -->
+
+<p>新建 <a href="https://github.com/xxx/friends/issues/">GitHub Issue</a> 按照模板格式填写并提交。</p>
+<p>为了提高图片加载速度，建议优化头像：</p>
+<ol>
+<li>打开 <a href="https://www.yasuotu.com/">压缩图</a> 上传自己的头像，将图片尺寸调整到 <code>144px</code> 后下载。</li>
+<li>将压缩后的图片上传到 <a href="https://7bu.top/">去不图床</a> 或者其它稳定的图床并使用此图片链接作为头像。</li>
+</ol>
+<!-- node 第二步：添加友链并等待管理员审核 -->
+
+<p>请添加本站到您的友链中：</p>
+<pre><code class="language-yaml">title: xxx
+url: https://xxx.com
+avatar: 
+screenshot: 
+</code></pre>
+<p>待管理员审核通过，添加了 <code>active</code> 标签后，回来刷新即可生效。</p>
+<p>如果您需要更新自己的友链，请直接修改 issue 内容，大约 3 分钟内生效，无需等待博客重新部署。</p>
+<p>{% endtimeline %}</p>
+<p>{% endfolding %}</p>
