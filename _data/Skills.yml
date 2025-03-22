@@ -1,0 +1,27 @@
+subject: 专业技能
+listing-order: 2
+icon: "/assets/img/screwdriver-wrench.svg"
+contents:
+  - title: Java
+    description:
+      - Java 基础扎实，熟悉多线程及 JUC 并发编程技术
+      - 熟练掌握常见数据结构、算法与设计模式，灵活运用
+      - 熟悉缓存、掌握 Kafka、MQ 消息队列，RPC 原理
+      - 对分布式系统、高并发、高可用性有一定的了解和实践
+      - 熟练使用 Spring Boot、Spring Cloud Alibaba、Dubbo 等主流框架
+  - title: SQL
+    description:
+      - 深⼊研究 MySQL、PostgreSQL 等关系型数据库，有数据库调优经验
+      - 熟悉 NoSQL，如 Redis 的缓存使用，进行高并发的相关功能模块开发
+  - title: Linux
+    description:
+      - 熟悉 Linux 操作系统基本命令，软件安装，以及 Linux 组件编译
+      - 熟悉 Linux 服务器配置、管理，如 Nginx、Tomcat、Redis 等
+      - 能看懂并编写简单的 sh 脚本
+  - title: other
+    description:
+      - 熟练掌握微信小程序的相关开发知识以及上线操作
+      - 熟悉云计算相关知识
+      - 掌握自动化测试相关技术
+      - 具备前端开发经验，了解 jQuery、CSS、HTML
+      - 有良好的代码⻛格和编程习惯，熟练使⽤ git 进⾏版本控制

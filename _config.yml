@@ -1,0 +1,18 @@
+title: 钟健材
+profile_img: /assets/img/avator.png
+icon_img: /assets/img/icon.jpg
+
+name: "钟健材"
+job: "Java 研发⼯程师"
+
+baseurl: /
+
+exclude:
+  - _posts/
+  - resources/
+  - vendor/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
