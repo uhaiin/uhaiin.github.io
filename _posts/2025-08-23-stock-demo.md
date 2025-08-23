@@ -3,22 +3,15 @@ layout: post
 category: example2
 ---
 
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>ECharts</title>
-    <!-- Include the ECharts file you just downloaded -->
     <script src="../assets/js/echarts.min.js"></script>
   </head>
   <body>
-    <!-- Prepare a DOM with a defined width and height for ECharts -->
     <div id="main" style="width: 600px;height:400px;"></div>
     <script type="text/javascript">
-      // Initialize the echarts instance based on the prepared dom
       var myChart = echarts.init(document.getElementById('main'));
-
-      // Specify the configuration items and data for the chart
       var option = {
         title: {
           text: 'ECharts Getting Started Example'
@@ -39,8 +32,6 @@ category: example2
           }
         ]
       };
-
-      // Display the chart using the configuration items and data just specified.
       myChart.setOption(option);
     </script>
   </body>
