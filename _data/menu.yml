@@ -1,0 +1,31 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  # - title: All
+  #   post_list:
+  #     limit: 5
+  #     show_more: true
+  #     show_more_text: See archive...
+  #     show_more_url: archive.html
+
+  - title: Surahs
+    post_list:
+      category: surah
+      show_more: true
+      show_more_text: See more posts...
+      show_more_url: example2-archive.html
+  
+  - title: Duas
+    post_list:
+      category: dua
+      show_more: true
+      show_more_text: See more posts...
+      show_more_url: example2-archive.html
+  
+  - title: Thoughts
+    post_list:
+      category: thoughts
+      show_more: true
+      show_more_text: See more posts...
+      show_more_url: example2-archive.html
