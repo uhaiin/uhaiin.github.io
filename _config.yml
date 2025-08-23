@@ -4,7 +4,7 @@ email: jiancai.zhong@email.cn
 url: https://uhaiin.com
 baseurl: "/"
 description: > # description of the site (multiple lines allowed)
-  A (nearly) no-CSS, fast, minimalist Jekyll theme.
+  A personal blog that’s "fast" and "clean". Built on the minimalist Jekyll theme "uhaiin", it adopts a nearly no-CSS design to reduce loading overhead, bringing reading back to the essence of content. It features technical sharing, article format examples, and other types of content, all neatly organized by categories. Equipped with an RSS subscription function, it’s ideal for you who prefer efficient information acquisition and a minimalist style.
 
 permalink: /:slug.html
 
