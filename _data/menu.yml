@@ -11,14 +11,15 @@ entries:
 
   - title: all posts
     post_list:
-      limit: 10
+      limit: 5
       show_more: true
       show_more_text: See archive ...
       show_more_url: archive.html
 
   - title: posts by category
     post_list:
-      category: example
+      limit: 5
+      category: example2
       show_more: true
       show_more_text: See more posts...
       show_more_url: example2-archive.html

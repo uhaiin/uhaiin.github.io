@@ -1,5 +1,6 @@
 ---
 layout: post
+category: example2
 ---
 
 This post is here to test [$$\jektex$$](https://github.com/yagarea/jektex),

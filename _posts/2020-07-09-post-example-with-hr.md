@@ -1,6 +1,7 @@
 ---
 layout: post
 slug: hr example
+category: example2
 title: A Title with Mixed Cases and an HR
 ---
 

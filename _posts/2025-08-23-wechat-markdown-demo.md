@@ -1,5 +1,6 @@
 ---
 layout: post
+category: example2
 ---
 
 # 探索 Markdown 的奇妙世界
