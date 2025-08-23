@@ -8,7 +8,7 @@ description: > # description of the site (multiple lines allowed)
 
 permalink: /:slug.html
 
-favicon: "logo.jpg"
+favicon: "favicon.ico"
 
 remote_theme: riggraz/no-style-please
 
