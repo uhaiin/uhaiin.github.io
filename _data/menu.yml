@@ -18,21 +18,21 @@ entries:
 
   - title: posts by category
     post_list:
-      category: example2
+      category: 
       show_more: true
       show_more_text: See more posts...
       show_more_url: example2-archive.html
 
-  - title: rss
-    url: feed.xml
+  # - title: rss
+  #   url: feed.xml
   
-  - title: another list
-    entries:
-      - title: with subitems
-        entries:
-          - title: with subsubitems
-          - title: example page
-            url: about
-  - title: PRO TIP
-    entries:
-      - title: to edit this menu, edit _data/menu.yml file
+  # - title: another list
+  #   entries:
+  #     - title: with subitems
+  #       entries:
+  #         - title: with subsubitems
+  #         - title: example page
+  #           url: about
+  # - title: PRO TIP
+  #   entries:
+  #     - title: to edit this menu, edit _data/menu.yml file
