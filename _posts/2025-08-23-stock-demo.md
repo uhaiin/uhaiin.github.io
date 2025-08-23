@@ -9,7 +9,7 @@ category: example2
     <meta charset="utf-8" />
     <title>ECharts</title>
     <!-- Include the ECharts file you just downloaded -->
-    <script src="echarts.js"></script>
+    <script src="../assets/js/echarts.min.js"></script>
   </head>
   <body>
     <!-- Prepare a DOM with a defined width and height for ECharts -->
