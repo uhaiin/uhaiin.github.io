@@ -4,10 +4,10 @@
 entries:
   - title: info
     entries:
-      - title: A personal blog that’s "fast" and "clean". Built on the minimalist Jekyll theme "uhaiin", it adopts a nearly no-CSS design to reduce loading overhead, bringing reading back to the essence of content. It features technical sharing, article format examples, and other types of content, all neatly organized by categories. Equipped with an RSS subscription function, it’s ideal for you who prefer efficient information acquisition and a minimalist style.
-      - title: github repo
-        url: https://github.com/riggraz/no-style-please
-      - title: "used by <a href='https://riggraz.dev'>riggraz.dev</a> and <a href='https://github.com/riggraz/no-style-please/network/dependents'>many others</a>"
+      - title: A personal blog that’s "fast" and "clean". Built on Jekyll, it adopts a nearly no-CSS design to reduce loading overhead, bringing reading back to the essence of content.
+      - title: "author: jiancai.zhong"
+      - title: "email: <a href='mailto:jiancai.zhong@email.cn'>jiancai.zhong@email.cn</a>"
+
 
   - title: all posts
     post_list:
