@@ -6,18 +6,19 @@ profile_img: "/assets/img/favicon.jpg"
 # Social Links
 email: jiancai.zhong@email.cn
 github_username: uhaiin
-twitter_username: twitter
-instagram_username: instagram
-linkedin_username: linkedin
-facebook_username: facebook
+# twitter_username: twitter
+# instagram_username: instagram
+# linkedin_username: linkedin
+# facebook_username: facebook
 
 # External API
-giscus_repo: "byanko55/jekyll-theme-satellite"
-giscus_repoId: "R_kgDOJ6fqWg"
+giscus_repo: "uhaiin/uhaiin.github.io"
+giscus_repoId: "R_kgDOOMyF8g"
 giscus_category: "Q&A"
-giscus_categoryId: "DIC_kwDOJ6fqWs4Cc7p7"
+giscus_categoryId: "DIC_kwDOOMyF8s4Cumji"
 goatcounter_code: byanko77
 google_analytics:
+
 
 # If your repo name follows the format "<user-name>.github.io", then leave the below blank.
 # Otherwise, set its value as "/<repo-name>". ex) baseurl: /myblog
