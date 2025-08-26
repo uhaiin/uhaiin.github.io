@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: "en" }}">
-  {%- include head.html -%}
-  <body a="{{ site.theme_config.appearance | default: "auto" }}">
-    <main class="page-content" aria-label="Content">
-      <div class="w">
-        {{ content }}
-      </div>
-    </main>
-
-    {%-if site.goat_counter and jekyll.environment == "production"-%}
-      {%-include goat_counter.html-%}
-    {%-endif-%}
-
-    {% if page.custom_js %}
-      {% for js_file in page.custom_js %}
-        <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
-      {% endfor %}
-    {% endif %}
-  </body>
+<html lang="en">
+    <head>
+        {% include head.html %}
+        <link rel="stylesheet" href="{{ '/assets/css/404.css' | prepend: site.baseurl }}">
+    </head>
+    <body>
+        <div class="blank-page">
+        <a href="{{ '/' | prepend: site.baseurl }}" class="go-home">↩️ GO HOME</a>
+        <div class="not-found-msg">
+            <h1 class="sour-face">`Φ ⌒ `Φ ?</h1>
+            <p style="font-size:1.75rem; color:#fa4251;">404: Page not found</p>
+            <p style="font-size:1.25rem;">D-Data breach...? &nbsp&nbsp No such thing allowed!</p>
+        </div>
+        </div>
+    </body>
+    <script src="{{ '/assets/js/404.js' | prepend: site.baseurl }}"></script>
 </html>

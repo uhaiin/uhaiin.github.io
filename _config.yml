@@ -1,36 +1,53 @@
-title:  uhaiin
-author: jiancai.zhong
-email: jiancai.zhong@email.cn
-url: https://uhaiin.com
-baseurl: "/"
-description: > # description of the site (multiple lines allowed)
-  A personal blog that’s "fast" and "clean". Built on the minimalist Jekyll theme "uhaiin", it adopts a nearly no-CSS design to reduce loading overhead, bringing reading back to the essence of content. It features technical sharing, article format examples, and other types of content, all neatly organized by categories. Equipped with an RSS subscription function, it’s ideal for you who prefer efficient information acquisition and a minimalist style.
+title: example.com
+description: "Satellite - jekyll blog theme"
+logo_img: "/assets/img/favicon.webp"
+profile_img: "/assets/img/profile.webp"
 
-permalink: /:slug.html
+# Social Links
+email: example@gmail.com
+github_username: github
+twitter_username: twitter
+instagram_username: instagram
+linkedin_username: linkedin
+facebook_username: facebook
 
-favicon: "favicon.ico"
+# External API
+giscus_repo: "byanko55/jekyll-theme-satellite"
+giscus_repoId: "R_kgDOJ6fqWg"
+giscus_category: "Q&A"
+giscus_categoryId: "DIC_kwDOJ6fqWs4Cc7p7"
+goatcounter_code: byanko77
+google_analytics:
 
-remote_theme: riggraz/no-style-please
+# If your repo name follows the format "<user-name>.github.io", then leave the below blank.
+# Otherwise, set its value as "/<repo-name>". ex) baseurl: /myblog
+baseurl:
 
-theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
-  back_home_text: ".." # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: false # show blog description in home page
-  lowercase_titles: true # show titles in lowercase in lists
-
-sass:
-  style: compressed
-
+# Build settings
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
-  - jektex
+  - jekyll-loading-lazy
 
-jektex:
-  cache_dir: ".jektex-cache"
-  ignore: ["*.xml"]
-  silent: false
-  macros:
-    - ["\\Q", "\\mathbb{Q}"]
-    - ["\\C", "\\mathbb{C}"]
+exclude:
+  - docs/
+
+collections:
+  pages:
+    output: true
+    permalink: /:path.html
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      date: "1900-01-01"
+
+# Markdown newline activator 
+kramdown:
+  input: GFM
+  hard_wrap: true
