@@ -1,11 +1,11 @@
-title: example.com
-description: "Satellite - jekyll blog theme"
-logo_img: "/assets/img/favicon.webp"
-profile_img: "/assets/img/profile.webp"
+title: uhaiin.com
+description: "Introduction for you blog"
+logo_img: "/assets/img/favicon.ico"
+profile_img: "/assets/img/favicon.jpg"
 
 # Social Links
-email: example@gmail.com
-github_username: github
+email: jiancai.zhong@email.cn
+github_username: uhaiin
 twitter_username: twitter
 instagram_username: instagram
 linkedin_username: linkedin
