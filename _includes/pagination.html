@@ -26,13 +26,11 @@
                             {% endif %}
                             <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ thumbnail_url }}') !important"></a>
                         {% else %}
-                            {%- assign path_hash = sub_page.url | md5 -%}
-                            {%- assign char_sum = 0 -%}
-                            {%- for char in path_hash -%}
-                                {%- assign char_code = char | ord -%}
-                                {%- assign char_sum = char_sum | plus: char_code -%}
+                            {%- assign numbers = "" | split: "" -%}
+                            {%- for i in (0..38) -%}
+                                {%- assign numbers = numbers | push: i -%}
                             {%- endfor -%}
-                            {%- assign random_num = char_sum | modulo: 39 -%}
+                            {%- assign random_num = numbers | sample -%}
                             <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumb_blog/' | append: random_num | append: '.jpg' | prepend: site.baseurl }}') !important"></a>
                         {% endif %}
                     </div>
