@@ -19,7 +19,6 @@
                 <div id="article_content">
                     <div class="thumbnail_zone">
                         {% if sub_page.thumbnail != nil %}
-                            <!-- 原有自定义缩略图逻辑不变 -->
                             {%- assign thumbnail_url = sub_page.thumbnail -%}
                             {%- assign check_localasset = thumbnail_url | split:'/' -%}
                             {% if check_localasset[0] == '' %}
@@ -27,18 +26,8 @@
                             {% endif %}
                             <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ thumbnail_url }}') !important"></a>
                         {% else %}
-                            <!-- 改为空样式，由JS动态填充 -->
-                            <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" loading="lazy" aria-label="thumbnail_post" id="random-thumbnail"></a>
-
-                            <!-- 新增JS代码 -->
-                            <script>
-                                // 生成 0 到 38 的随机数
-                                const randomNum = Math.floor(Math.random() * 39); 
-                                const baseUrl = '{{ site.baseurl }}';
-                                const thumbnailEl = document.getElementById('random-thumbnail');
-                                // 动态设置背景图
-                                thumbnailEl.style.backgroundImage = `url('${baseUrl}/assets/img/thumb_blog/${randomNum}.jpg') !important`;
-                            </script>
+                            {%- assign random_num = "now" | date: "%N" | modulo: 39 -%}
+                            <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumb_blog/' | append: random_num | append: '.jpg' | prepend: site.baseurl }}') !important"></a>
                         {% endif %}
                     </div>
                     <div class="box_contents">
