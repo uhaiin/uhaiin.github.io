@@ -26,7 +26,8 @@
                             {% endif %}
                             <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ thumbnail_url }}') !important"></a>
                         {% else %}
-                            <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumbnail/empty.jpg' | prepend: site.baseurl }}') !important"></a>
+                            {%- assign random_num = 39 | random -%} <!-- 直接生成0-38的随机数 -->
+                            <a href="{{ sub_page.url | prepend: site.baseurl }}" class="thumbnail_post empty" loading="lazy" aria-label="thumbnail_post" style="background-image:url('{{ '/assets/img/thumb_blog/' | append: random_num | append: '.jpg' | prepend: site.baseurl }}') !important"></a>
                         {% endif %}
                     </div>
                     <div class="box_contents">
