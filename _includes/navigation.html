@@ -38,7 +38,7 @@
     <ul class="nav-list">
     {%- for node in first_level_pages -%}
         {%- assign node_url = node.url | remove: 'index.html' -%}
-        {%- assign node_title = node.path | remove: 'index.md' | split: "/" | last | remove: '.md' | replace: "_pages", "0 首页" -%}
+        {%- assign node_title = node.path | remove: 'index.md' | split: "/" | last | remove: '.md' | replace: "_pages", "所有博客" -%}
         {%- assign children_list = second_level_pages 
             | where_exp: "item", "item.url contains node_url" -%}
         {%- assign num_children = children_list | size -%}
