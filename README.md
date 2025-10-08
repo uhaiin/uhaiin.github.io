@@ -1,2 +1,2 @@
 - 基于 [这个仓库](https://github.com/byanko55/jekyll-theme-satellite) 源码进行修改，更多请参考 [源码](https://github.com/byanko55/jekyll-theme-satellite) 
-- 访客统计: https://[my-code].goatcounter.com，例如本项目是：https://jiacai.goatcounter.com
+- 访客统计：https://[my-code].goatcounter.com，例如本项目是：https://jiacai.goatcounter.com
