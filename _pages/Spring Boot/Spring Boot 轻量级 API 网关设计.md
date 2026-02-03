@@ -7,11 +7,11 @@ tags:
 date: "2026-02-03"
 ---
 
-## 目标
+# 目标
 
 实现了一个基于 SpringBoot 的轻量级 API 防火墙，通过拦截器机制提供实时防护能力。对所有 API 请求进行“前置检查“，支持配置IP白名单、黑名单，白名单优先级更高。系统采用 Guava Cache 实现高性能内存缓存，支持 QPS 限制。
 
-## 技术选型
+# 技术选型
 
 **数据库**：postgresql + 通用 mapper tk.mybatis
 
@@ -23,9 +23,9 @@ date: "2026-02-03"
 
 > 对于分布式场景，后续可以扩展 Redis + Lua 实现统一限流；但在本文场景下，先聚焦 单机轻量化防护。
 
-## 核心表
+# 核心表
 
-### 接口访问日志表
+## 接口访问日志表
 
 ```sql
 CREATE TABLE demo.firewall_access_log (
@@ -57,7 +57,7 @@ COMMENT ON COLUMN demo.firewall_access_log.request_time IS '请求时间';
 COMMENT ON COLUMN demo.firewall_access_log.response_time IS '响应时间(毫秒)';
 ```
 
-### 接口限流规则表
+## 接口限流规则表
 
 ```sql
 CREATE TABLE demo.firewall_rule (
@@ -93,7 +93,7 @@ INSERT INTO firewall_rule (id, rule_name, api_pattern, qps_limit, enabled, descr
 INSERT INTO firewall_rule (id, rule_name, api_pattern, qps_limit, enabled, description, created_time, updated_time) VALUES(7, 'demo 限流', '/demo', 2, true, '默认API接口限流规则', '2026-01-26 13:48:18.421', '2026-01-26 15:43:53.418');
 ```
 
-### 接口访问统计表
+## 接口访问统计表
 
 ```sql
 CREATE TABLE demo.firewall_statistics (
@@ -122,7 +122,7 @@ COMMENT ON COLUMN demo.firewall_statistics.created_time IS '创建时间';
 COMMENT ON COLUMN demo.firewall_statistics.updated_time IS '更新时间';
 ```
 
-### ip 黑名单表
+## ip 黑名单表
 
 ```sql
 CREATE TABLE demo.firewall_blacklist (
@@ -151,7 +151,7 @@ COMMENT ON COLUMN demo.firewall_blacklist.updated_time IS '更新时间';
 INSERT INTO firewall_blacklist (id, ip_address, reason, expire_time, enabled, created_time, updated_time) VALUES(1, '10.163.193.196/32', '恶意攻击IP', NULL, NULL, '2026-01-26 13:57:46.428', '2026-01-26 15:35:34.028');
 ```
 
-### ip 白名单表
+## ip 白名单表
 
 ```sql
 CREATE TABLE demo.firewall_whitelist (
@@ -180,7 +180,7 @@ INSERT INTO firewall_whitelist (id, ip_address, description, enabled, created_ti
 INSERT INTO firewall_whitelist (id, ip_address, description, enabled, created_time, updated_time) VALUES(3, '192.168.1.100/32', '管理员IP地址', true, '2026-01-26 13:48:35.552', '2026-01-26 13:48:35.552');
 ```
 
-## 配置文件
+# 配置文件
 
 集成 postgresql+mybatis+firewall
 
@@ -256,9 +256,9 @@ firewall:
     - /favicon.ico
 ```
 
-## 核心代码
+# 核心代码
 
-### 接口访问日志实体类
+## 接口访问日志实体类
 
 ```java
 package com.uhaiin.firewall.entity;
@@ -404,7 +404,7 @@ public class FirewallAccessLog {
 }
 ```
 
-### ip 黑名单实体类
+## ip 黑名单实体类
 
 ```java
 package com.uhaiin.firewall.entity;
@@ -562,7 +562,7 @@ public class FirewallBlacklist {
 }
 ```
 
-### 规则实体类
+## 规则实体类
 
 ```java
 package com.uhaiin.firewall.entity;
@@ -680,7 +680,7 @@ public class FirewallRule {
 }
 ```
 
-### 接口访问统计实体类
+## 接口访问统计实体类
 
 ```java
 package com.uhaiin.firewall.entity;
@@ -853,7 +853,7 @@ public class FirewallStatistics {
 }
 ```
 
-### ip 白名单实体类
+## ip 白名单实体类
 
 ```java
 package com.uhaiin.firewall.entity;
@@ -997,7 +997,7 @@ public class FirewallWhitelist {
 }
 ```
 
-### mapper
+## mapper
 
 > 采用通用mapper：tk.mybatis
 >
@@ -1011,7 +1011,7 @@ public interface FirewallStatisticsMapper extends Mapper<FirewallStatistics> {}
 public interface FirewallWhitelistMapper extends Mapper<FirewallWhitelist> {}
 ```
 
-### WebConfig
+## WebConfig
 
 ```java
 import com.uhaiin.common.interceptor.FirewallInterceptor;
@@ -1051,7 +1051,7 @@ public class WebConfig implements WebMvcConfigurer {
 }
 ```
 
-### Interceptor
+## Interceptor
 
 ```java
 package com.uhaiin.common.interceptor;
@@ -1297,7 +1297,7 @@ public class FirewallInterceptor implements HandlerInterceptor {
 }
 ```
 
-### 实现类
+## 实现类
 
 > 防火墙实现类
 
@@ -1804,7 +1804,7 @@ public class RuleManagerServiceImpl implements RuleManagerService {
 }
 ```
 
-### 定时任务
+## 定时任务
 
 > 定期清理过期规则
 
@@ -1909,7 +1909,7 @@ public class FirewallTask {
 }
 ```
 
-### POM
+## POM
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
