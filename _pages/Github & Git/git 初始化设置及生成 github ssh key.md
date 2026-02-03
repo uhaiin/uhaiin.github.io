@@ -1,5 +1,7 @@
 ---
 title: "git 初始化设置及生成 github ssh key"
+tags:
+	- git
 date: "2025-09-27"
 ---
 
@@ -27,6 +29,8 @@ git config --global --list
 
 # 生成 SSH 密钥
 ---
+
+
 
 在终端中，运行以下命令来生成一个新的SSH密钥对。这里，你需要将your_email@example.com替换成你的GitHub邮箱地址，并将id_ed25519替换成你想要的密钥文件名（如果你想要使用RSA算法，可以将-t ed25519改为-t rsa -b 4096）
 
