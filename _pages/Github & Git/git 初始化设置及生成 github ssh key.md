@@ -1,7 +1,7 @@
 ---
 title: "git 初始化设置及生成 github ssh key"
 tags:
-	- git
+    - git
 date: "2025-09-27"
 ---
 

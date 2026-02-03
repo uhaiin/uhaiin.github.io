@@ -1,9 +1,9 @@
 ---
 title: "SpringBoot集成通用mapper和lombok"
 tags:
-	- java
-	- tk.mybatis
-	- lombok
+    - java
+    - tk.mybatis
+    - lombok
 date: "2026-02-03"
 ---
 
