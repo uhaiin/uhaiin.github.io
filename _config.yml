@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "zh-CN"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "jiancai.zhong"
+title                    : "uhaiin.com"
 title_separator          : "-"
 name                     : "jiancai.zhong"
 description              : "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "jiancai.zhong"
   pronouns         : # example: "she/her"
-  bio              : "Java 研发⼯程师"
+  bio              : "无人扶我青云志，我自踏雪至山巅"
   location         : "广东省·广州市"
   employer         : # "Red Brick University"
   uri              : # URL
