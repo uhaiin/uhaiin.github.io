@@ -25,10 +25,10 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "jiancai.zhong"
-  pronouns         : # example: "she/her"  
+  pronouns         : "her" # example: "she/her"
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "广东省·广州市"
+  employer         : # "Red Brick University"
   uri              : # URL
   email            : "jiancai.zhong@email.cn"
 
