@@ -1,18 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        {% include head.html %}
-        <link rel="stylesheet" href="{{ '/assets/css/404.css' | prepend: site.baseurl }}">
-    </head>
-    <body>
-        <div class="blank-page">
-        <a href="{{ '/' | prepend: site.baseurl }}" class="go-home">↩️ GO HOME</a>
-        <div class="not-found-msg">
-            <h1 class="sour-face">`Φ ⌒ `Φ ?</h1>
-            <p style="font-size:1.75rem; color:#fa4251;">404: Page not found</p>
-            <p style="font-size:1.25rem;">D-Data breach...? &nbsp&nbsp No such thing allowed!</p>
-        </div>
-        </div>
-    </body>
-    <script src="{{ '/assets/js/404.js' | prepend: site.baseurl }}"></script>
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    {{ content }}
+
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
 </html>
